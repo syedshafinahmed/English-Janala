@@ -2,6 +2,17 @@ const createElements = (arr) =>{
     const htmlElements = arr.map((el) => `<span class="btn text-base font-light">${el}</span>`);
     return htmlElements.join(" ");
 };
+const manageSpinner = (status) =>{
+    if(status == true){
+        document.getElementById("spinner").classList.remove("hidden");
+        document.getElementById("word-container").classList.add("hidden");
+        
+    }
+    else{
+        document.getElementById("spinner").classList.add("hidden");
+        document.getElementById("word-container").classList.remove("hidden");
+    }
+}
 const loadLessons = () => {
     fetch("https://openapi.programming-hero.com/api/levels/all")
         .then(res => res.json())
@@ -14,6 +25,7 @@ const removeActive = () =>{
     })
 }
 const loadLevelWord = (id) =>{
+    manageSpinner(true);
     const url = `https://openapi.programming-hero.com/api/level/${id}`;
     fetch(url)
         .then(res => res.json())
@@ -56,6 +68,8 @@ const displayLevelWord = (words) =>{
             <p class="font-bangla text-[#79716B] text-base">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
             <h1 class="font-medium font-bangla text-[#292524] text-3xl">নেক্সট Lesson এ যান</h1>
         </div>`;
+        manageSpinner(false);
+        return;
         wordContainer.append()
     }
     words.forEach (word =>{
@@ -73,6 +87,7 @@ const displayLevelWord = (words) =>{
         </div>`;
         wordContainer.append(card);
     })
+    manageSpinner(false);
 }
 const displayLessons = (lessons) => {
     const levelContainer = document.getElementById("level-container");
