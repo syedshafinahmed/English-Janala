@@ -29,8 +29,21 @@ const loadWordDetail = async(id) =>{
 const displayWordDetails = (word) =>{
     console.log(word);
     const detailsBox = document.getElementById("details-container");
-    // detailsBox.innerHTML = `
-    // `;
+    detailsBox.innerHTML = `
+                <div class="space-y-2">
+                    <h1 class="text-2xl font-bold">${word.word} (<i class="fa-solid fa-microphone-lines"></i>: ${word.pronunciation})</h1>
+                    <p class="text-lg font-semibold">Meaning</p>
+                    <p class="font-bangla font-medium text-lg">${word.meaning}</p>
+                    <p class="text-lg font-semibold">Example</p>
+                    <p class="text-base ">${word.sentence}</p>
+                    <p class="font-bangla text-lg font-semibold">সমার্থক শব্দ গুলো</p>
+                    <div>
+                        <button class="btn text-base font-light">${word.synonyms[0]}</button>
+                        <button class="btn text-base font-light">${word.synonyms[1]}</button>
+                        <button class="btn text-base font-light">${word.synonyms[2]}</button>
+                    </div>
+                    <button class="btn bg-[#422AD5] w-full text-white text-center mt-4">Continue Learning</button>
+                </div>`;
     document.getElementById("word_modal").showModal();
 }
 const displayLevelWord = (words) =>{
