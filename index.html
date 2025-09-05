@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +21,6 @@
     <link rel="stylesheet" href="style.css">
     <title>English Janala</title>
 </head>
-
 <body>
     <header class="w-full bg-[#2b74b842]">
         <nav class="flex flex-col md:flex-row gap-y-5 justify-between max-w-[1250px] mx-auto p-8">
@@ -41,7 +39,6 @@
             </div>
         </nav>
     </header>
-
     <section class="flex flex-col md:flex-row justify-between items-center max-w-[1250px] mx-auto p-8">
         <div class="flex-1">
             <h1 class="font-bold text-2xl md:text-5xl text-[#18181B] mb-5 md:mb-8 text-center md:text-left"><span
@@ -52,13 +49,11 @@
         </div>
         <img class="flex-1 w-1/2" src="assets/hero-student.jpg" alt="">
     </section>
-
     <section>
         <h1 class="font-bold text-2xl md:text-5xl text-[#18181B] mb-5 md:mb-8 text-center"><span
                 class="text-[#00BCFF]">Let's</span> Learn Vocabulary!!</h1>
         <div id="level-container" class="flex gap-5 flex-wrap justify-center"></div>
     </section>
-
     <section class="flex justify-center pt-13">
         <div class="join rounded">
             <div>
@@ -70,11 +65,9 @@
             <button id="btn-search" class="btn bg-[#422AD5] rounded-tr rounded-br text-white">Search</button>
         </div>
     </section>
-
     <section id="spinner" class="flex justify-center items-center hidden">
         <span class="loading loading-spinner text-primary loading-xl py-10"></span>
     </section>
-
     <section id="word-container"
         class="bg-gray-300 rounded-xl p-10 max-w-[1250px] mx-auto my-20 grid grid-cols-1 md:grid-cols-3 gap-5">
         <div class="col-span-full text-center space-y-5 py-10">
@@ -82,9 +75,6 @@
             <h1 class="font-medium font-bangla text-[#292524] text-3xl">একটি Lesson Select করুন।</h1>
         </div>
     </section>
-
-
-
     <!-- Open the modal using ID.showModal() method -->
     <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
     <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
@@ -100,7 +90,6 @@
             </div>
         </div>
     </dialog>
-
     <footer class="w-full bg-[#2b74b842]">
         <nav class="flex flex-col md:flex-row gap-y-5 justify-between max-w-[1250px] mx-auto p-8">
             <div class="flex md:justify-center">
@@ -124,8 +113,6 @@
             </div>
         </nav>
     </footer>
-
     <script src="index.js"></script>
 </body>
-
 </html>
