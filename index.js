@@ -1,3 +1,7 @@
+const createElements = (arr) =>{
+    const htmlElements = arr.map((el) => `<span class="btn text-base font-light">${el}</span>`);
+    return htmlElements.join(" ");
+};
 const loadLessons = () => {
     fetch("https://openapi.programming-hero.com/api/levels/all")
         .then(res => res.json())
@@ -37,11 +41,7 @@ const displayWordDetails = (word) =>{
                     <p class="text-lg font-semibold">Example</p>
                     <p class="text-base ">${word.sentence}</p>
                     <p class="font-bangla text-lg font-semibold">সমার্থক শব্দ গুলো</p>
-                    <div>
-                        <button class="btn text-base font-light">${word.synonyms[0]}</button>
-                        <button class="btn text-base font-light">${word.synonyms[1]}</button>
-                        <button class="btn text-base font-light">${word.synonyms[2]}</button>
-                    </div>
+                    <div>${createElements(word.synonyms)}</div>
                     <button class="btn bg-[#422AD5] w-full text-white text-center mt-4">Continue Learning</button>
                 </div>`;
     document.getElementById("word_modal").showModal();
