@@ -59,11 +59,24 @@
         <div id="level-container" class="flex gap-5 flex-wrap justify-center"></div>
     </section>
 
+    <section class="flex justify-center pt-13">
+        <div class="join rounded">
+            <div>
+                <label class="input validator join-item">
+                    <input type="text" placeholder="Search Vocabulary" required />
+                </label>
+                <div class="validator-hint hidden"></div>
+            </div>
+            <button class="btn bg-[#422AD5] text-white">Search</button>
+        </div>
+    </section>
+
     <section id="spinner" class="flex justify-center items-center hidden">
         <span class="loading loading-spinner text-primary loading-xl py-10"></span>
     </section>
 
-    <section id="word-container" class="bg-gray-300 rounded-xl p-10 max-w-[1250px] mx-auto my-20 grid grid-cols-2 md:grid-cols-3 gap-5">
+    <section id="word-container"
+        class="bg-gray-300 rounded-xl p-10 max-w-[1250px] mx-auto my-20 grid grid-cols-2 md:grid-cols-3 gap-5">
         <div class="col-span-full text-center space-y-5 py-10">
             <p class="font-bangla text-[#79716B] text-base">আপনি এখনো কোন Lesson Select করেন নি</p>
             <h1 class="font-medium font-bangla text-[#292524] text-3xl">একটি Lesson Select করুন।</h1>
@@ -76,17 +89,17 @@
     <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
     <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box">
-            <div id="details-container"> 
+            <div id="details-container">
                 <!-- div -->
-             </div>
+            </div>
             <div class="modal-action">
                 <form method="dialog">
                     <!-- if there is a button in form, it will close the modal -->
-                     <button class="btn">Close</button>
+                    <button class="btn">Close</button>
                 </form>
             </div>
         </div>
-    </dialog> 
+    </dialog>
 
     <script src="index.js"></script>
 </body>
