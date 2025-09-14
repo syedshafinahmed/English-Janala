@@ -1,6 +1,6 @@
 # ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
 
-## ⚡ API Endpoints
+## 🔗 API Endpoints
 
 All Levels
 
