@@ -1,26 +1,26 @@
-# ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
+# <img width="25px" src="./assets/logo.png" /> ENGLISH JANALA
 
 ## 🔗 API Endpoints
 
-All Levels
+### All Levels
 
 ```bash
 https://openapi.programming-hero.com/api/levels/all
 ```
 
-Words by Levels <br/>
+### Words by Levels <br/>
 
 ```bash
 https://openapi.programming-hero.com/api/level/5
 ```
 
-Words Detail <br/>
+### Words Detail <br/>
   
 ```bash
 https://openapi.programming-hero.com/api/word/5
 ```
 
-All Words <br/>
+### All Words <br/>
 
 ```bash
 https://openapi.programming-hero.com/api/words/all
