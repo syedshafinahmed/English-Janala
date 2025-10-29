@@ -29,4 +29,4 @@ https://openapi.programming-hero.com/api/words/all
 
 # Live Link
 
-https://english-janala-syedshafinahmed.netlify.app/
+https://english-janala-syedshafinahmed.netlify.app/  or https://english-janala-syedshafinahmed.pages.dev/
